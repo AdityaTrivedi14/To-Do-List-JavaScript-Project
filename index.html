@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="container">
+        <h1>ToDo List</h1>
+               <!-- INPUT FIELD -->
+        <input onkeydown="if(event.keyCode==13){todoList(); return false;}" type="text" placeholder="Add New To-Do">
+              <!-- TO DO LIST -->
+        <ul class="list">
+            
+            <!--
+            ***  THIS LIST WILL BE GENERATED USING JAVASCRIPT. ***
+                
+                 <li class="task">ToDo will be here <span class="delete"><i class="fas fa-trash"></i></span></li> 
+            -->
+
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

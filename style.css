@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    background: #040a24;
+    width: 100%;
+    height: 100vh;
+}
+#container{
+    position: absolute;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* width: 320px; */
+    background: #fff;
+    box-shadow: 0 2px 6px #1bc6fa;
+    overflow: hidden;
+}
+
+h1{
+    background: linear-gradient(to right bottom,#2ef1fd,#53bffc);
+    padding: 20px;
+    color: #fafeff;
+}
+input{
+    margin: 0;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    padding: 20px;
+    background: #eee;
+    color: #1bc6fa;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+input:focus{
+    outline: 1px solid #1bc6fa;
+}
+ul{
+    list-style: none;
+    /* padding: 19px; */
+}
+ul li{
+    padding: 19px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #333;
+    cursor: default;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+ul li span{
+    z-index: 4;
+    transform: translateX(45px);
+    transition: .4s ease-in-out;
+}
+ul li:hover > span{
+    transform: translateX(0px);
+}
+ul li span i{
+    cursor: pointer;
+    transition: .6s ease;
+    font-size: 28px;
+    padding-left: 18px;
+    color: #51bbf8;
+}
+ul li span i:hover{
+    color: #da2323;
+}
+.completed{
+    color: #888;
+    text-decoration: line-through;
+}
